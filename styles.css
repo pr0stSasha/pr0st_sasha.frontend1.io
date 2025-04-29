@@ -1,0 +1,175 @@
+/* Подключаем шрифт */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    background: linear-gradient(135deg, #ffb6c1, #ffe4e1); /* Нежный розовый градиент */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #444;
+}
+
+/* Главный контейнер */
+.container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero-блок */
+.hero {
+    margin-bottom: 40px;
+}
+
+.hero-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ff69b4; /* Розовый цвет */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: not-allowed;  /* Курсор, который сообщает, что кнопка неактивна */
+}
+
+a.btn:hover {
+    background-color: #ff4785;
+}
+
+/* Описание о себе */
+.about {
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    font-size: 1.8rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Навыки */
+
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Чтобы элементы не выходили за пределы экрана */
+}
+
+.skills-text {
+    text-align: left;
+    left: -25px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.project-img {
+    width: 25%;  /* Регулируем размер изображения */
+    height: auto;
+}
+
+.skills-list {
+    list-style-type: none;  /* Убираем стандартные маркеры */
+    padding-left: 0;
+}
+
+.skill-item {
+    margin-bottom: 2rem;
+    position: relative; /* Чтобы разместить маркер относительно текста */
+    padding-left: 2px;
+}
+
+.skill-item::before {
+    content: "•"; /* Символ дефиса */
+    position: absolute;
+    left: -15px;
+    top: 10%;
+    transform: translateY(-25%); /* Выравнивание по вертикали */
+    font-size: 2.5rem; /* Размер дефиса */
+    color: #ff69b4; /* Цвет дефиса */
+}
+
+@media (max-width: 768px) {
+    .skills-content {
+        flex-direction: column;
+        align-items: center; /* Для мобильных выравниваем элементы по центру */
+    }
+
+    .project-img {
+        width: 100%;  /* На мобильных картинка будет занимать всю ширину */
+        margin-bottom: 20px;
+    }
+}
+
+/* Портфолио */
+.portfolio {
+    margin-bottom: 40px;
+}
+
+.project {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #ff69b4;
+}
+
+.project p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.project a {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px
+}
